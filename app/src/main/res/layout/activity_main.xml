@@ -1,0 +1,78 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blue"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/textViewWord"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:paddingLeft="20dp"
+        android:layout_weight="1"
+        android:text="@string/stttxt"
+        android:textColor="@color/white"
+        android:textSize="35sp" />
+
+    <TextView
+        android:id="@+id/textViewEg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:padding="10dp"
+        android:layout_weight="2"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/textlikewords"
+
+        android:textColor="@color/white"
+        android:textSize="35sp"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="3"
+        android:orientation="vertical">
+
+
+        <ImageView
+            android:id="@+id/voice_recordinglight_1"
+            android:layout_width="175dp"
+            android:layout_height="175dp"
+            android:layout_centerInParent="true"
+            android:scaleType="centerInside"
+            android:src="@mipmap/voice_ugc_icon_recordinglight"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/voice_recordinglight_2"
+            android:layout_width="175dp"
+            android:layout_height="175dp"
+            android:layout_centerInParent="true"
+            android:scaleType="centerInside"
+            android:src="@mipmap/voice_ugc_icon_recordinglight"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/voice_recordinglight_3"
+            android:layout_width="175dp"
+            android:layout_height="175dp"
+            android:layout_centerInParent="true"
+            android:scaleType="centerInside"
+            android:src="@mipmap/voice_ugc_icon_recordinglight"
+            android:visibility="gone" />
+
+        <ImageButton
+            android:id="@+id/imgbtn_recorder"
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:layout_centerInParent="true"
+            android:background="@mipmap/processing1" />
+
+
+
+    </RelativeLayout>
+
+</LinearLayout>
